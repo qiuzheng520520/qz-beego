@@ -1,6 +1,8 @@
 package main
 
 import (
+	router "beego/test1/router"
+
 	"github.com/astaxie/beego"
 )
 
@@ -14,5 +16,7 @@ func (this *MainController) Get() {
 
 func main() {
 	beego.Router("/", &MainController{})
+
+	router.Addroute()
 	beego.Run()
 }
